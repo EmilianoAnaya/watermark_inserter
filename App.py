@@ -32,6 +32,13 @@ class watermark_inserter():
         self.page.update()
     
     def pick_files_result(self,e: ft.FilePickerResultEvent):
+        if not e.files:
+            self.text_result.value="No selected Files"
+            self.text_result.update()
+            time.sleep(2)
+            self.text_result.value=""
+            self.text_result.update()
+            return
         for file in e.files:
             path = file.path.replace("\\","/")
             watermark_script(path)
