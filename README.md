@@ -24,3 +24,6 @@ line, this will allow the Script to find your watermark image. You can also copy
 After this, you can just run the `App.vbs` file and start using the Script.
 
 Your watermarked images will be found in the `out` folder
+
+## Images of the Script
+![image](https://github.com/user-attachments/assets/02ae156a-69bd-4a42-afee-0a01fe3e06a0)
