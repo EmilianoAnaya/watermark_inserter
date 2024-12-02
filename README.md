@@ -22,3 +22,5 @@ In the `resources` folder, add your watermark image to use. Once that, copy the 
 line, this will allow the Script to find your watermark image. You can also copy the relative path of the file and just paste it.
 
 After this, you can just run the `App.vbs` file and start using the Script.
+
+Your watermarked images will be found in the `out` folder
