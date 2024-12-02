@@ -1,0 +1,6 @@
+__pycache__/
+Test.py
+storage/
+.venv/
+out/*
+resources/*
