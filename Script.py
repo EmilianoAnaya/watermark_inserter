@@ -7,9 +7,14 @@ def watermark_script(src):
     main_image = Image.open(src).convert("RGBA")
     watermark_image = Image.open(WATERMARK_ROUTE).convert("RGBA")
 
-    watermark_image = watermark_image.resize(
-        size=(int(main_image.width * 0.5), int(main_image.height * 0.5))
+    SCALE_FACTOR = 0.8
+    max_width = int(main_image.width * SCALE_FACTOR)
+    max_height = int(main_image.height * SCALE_FACTOR)
+
+    watermark_image.thumbnail(
+        (max_width, max_height)
     )
+
     wm_width, wm_height = watermark_image.size
 
     alpha = watermark_image.getchannel("A")
